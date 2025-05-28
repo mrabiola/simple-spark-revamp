@@ -5,6 +5,7 @@ import { StatsCard } from "@/components/dashboard/StatsCard";
 import { RecentTransactions } from "@/components/dashboard/RecentTransactions";
 import { BudgetSnapshot } from "@/components/dashboard/BudgetSnapshot";
 import { GoalProgress } from "@/components/dashboard/GoalProgress";
+import { InvestmentHoldings } from "@/components/dashboard/InvestmentHoldings";
 
 export default function Dashboard() {
   return (
@@ -72,6 +73,11 @@ export default function Dashboard() {
             <BudgetSnapshot />
             <GoalProgress />
           </div>
+        </div>
+
+        {/* Investment Holdings */}
+        <div className="grid grid-cols-1">
+          <InvestmentHoldings />
         </div>
       </div>
     </AppLayout>
