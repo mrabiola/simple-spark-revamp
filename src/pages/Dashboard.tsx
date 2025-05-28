@@ -1,5 +1,5 @@
 
-import { TrendingUp, DollarSign, PiggyBank, Wallet } from "lucide-react";
+import { TrendingUp, DollarSign, PiggyBank, Wallet, BarChart3 } from "lucide-react";
 import { AppLayout } from "@/components/layout/AppLayout";
 import { StatsCard } from "@/components/dashboard/StatsCard";
 import { RecentTransactions } from "@/components/dashboard/RecentTransactions";
@@ -22,7 +22,14 @@ export default function Dashboard() {
         </div>
 
         {/* Stats Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          <StatsCard
+            title="Net Worth"
+            value="$24,385.00"
+            icon={BarChart3}
+            trend={{ value: "23.1%", isPositive: true }}
+            gradient="bg-gradient-to-r from-purple-500 to-indigo-600"
+          />
           <StatsCard
             title="Total Income"
             value="$5,000.00"
@@ -45,9 +52,10 @@ export default function Dashboard() {
             gradient="bg-gradient-to-r from-blue-500 to-purple-600"
           />
           <StatsCard
-            title="Available Budget"
-            value="$3,200.00"
+            title="Investments"
+            value="$15,800.00"
             icon={Wallet}
+            trend={{ value: "18.2%", isPositive: true }}
             gradient="bg-gradient-to-r from-orange-500 to-yellow-600"
           />
         </div>

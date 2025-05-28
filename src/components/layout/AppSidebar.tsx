@@ -7,7 +7,8 @@ import {
   FileBarChart, 
   Settings,
   LogOut,
-  TrendingUp
+  TrendingUp,
+  BarChart3
 } from "lucide-react";
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -17,6 +18,7 @@ const navigation = [
   { name: 'Dashboard', href: '/', icon: LayoutDashboard },
   { name: 'Transactions', href: '/transactions', icon: CreditCard },
   { name: 'Budget Flows', href: '/budget', icon: PieChart },
+  { name: 'Investments', href: '/investments', icon: BarChart3 },
   { name: 'Goals', href: '/goals', icon: Target },
   { name: 'Reports', href: '/reports', icon: FileBarChart },
   { name: 'Settings', href: '/settings', icon: Settings },
