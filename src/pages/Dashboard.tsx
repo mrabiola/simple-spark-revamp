@@ -63,9 +63,10 @@ export default function Dashboard() {
 
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Recent Transactions */}
-          <div className="lg:col-span-2">
+          {/* Left Column - Recent Transactions */}
+          <div className="lg:col-span-2 space-y-8">
             <RecentTransactions />
+            <InvestmentHoldings />
           </div>
 
           {/* Right Sidebar */}
@@ -73,11 +74,6 @@ export default function Dashboard() {
             <BudgetSnapshot />
             <GoalProgress />
           </div>
-        </div>
-
-        {/* Investment Holdings */}
-        <div className="grid grid-cols-1">
-          <InvestmentHoldings />
         </div>
       </div>
     </AppLayout>
